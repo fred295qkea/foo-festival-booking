@@ -1,223 +1,194 @@
+.paysection {
+  z-index: 999;
+  //height: 700px;
+  // background-color: rgb(10 189 198 / 95%);
+  background-color: #711c91;
+  position: absolute;
 
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
 
-
-.paysection{
-    
-    z-index: 999;
-    //height: 700px;
-    // background-color: rgb(10 189 198 / 95%);
-    background-color: #0fb5be;
-    position: absolute;
-    
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    
-    display: none;
-    border-radius: 25px;
-
+  display: none;
+  border-radius: 25px;
 }
 @media only screen and (max-width: 600px) {
-    .paysection{
-        top: 10px;
-    }
+  .paysection {
+    top: 10px;
+  }
 }
 
-
-.show{
-    display: block;
-
+.show {
+  display: block;
 }
-.place_order{
-display: block;
-width: 150px;
-width: 3rem;
-        border: none;
-        text-decoration: none;
-        background-color: aliceblue;
-        border: none;
-        color: #711C91;
-        border-radius: 0.7rem;
-        font-size: 1rem;
-        padding: 0.3rem 0.6rem;
-        transition: 0.1s ease-in;
-        cursor: pointer;
+.place_order {
+  display: block;
+  width: 150px;
+  width: 3rem;
+  border: none;
+  text-decoration: none;
+  background-color: aliceblue;
+  border: none;
+  color: #711c91;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  padding: 0.3rem 0.6rem;
+  transition: 0.1s ease-in;
+  cursor: pointer;
 }
 
 .place_order:hover {
-box-shadow:
-0 0 2px #fff,
-0 0 5px #fff,
-0 0 13px #711C91,
-0 0 17px #711C91,;
-
+  box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 13px #711c91, 0 0 17px #711c91;
 }
 
 .pay_info_form {
-    margin: 3rem 8rem;
-.hide{
+  margin: 3rem 8rem;
+  .hide {
     display: none;
+  }
+
+  width: 100%;
 }
 
-
-
-
-    width: 100%;
+.cardbutton {
+  width: 100%;
+  border: none;
+  border-radius: 0.3rem;
+  height: 40px;
+  font-size: 16px;
 }
 
-.cardbutton{
-    width: 100%;
-    border: none;
-    border-radius: 0.3rem;
-    height: 40px;
-    font-size: 16px;
+.container {
+  width: 100%;
+  margin-inline: auto;
+  background-color: rgba($color: #711c91, $alpha: 0.5);
+  backdrop-filter: blur(7px);
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  gap: 50px;
 
-}
+  & > div {
+    width: 50%;
 
-.container{
-    width: 100%;
-    margin-inline: auto;
-    background-color: rgba($color: #0ABDC6, $alpha: 0.5);
-    backdrop-filter: blur(7px);
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-    border-radius: 1rem;
-    gap: 50px;
-
-    & > div{
-        width: 50%;
-
-        p {
-            color: aliceblue;
-        }
+    p {
+      color: aliceblue;
     }
+  }
 
-    label {
-        color: aliceblue;
+  label {
+    color: aliceblue;
+  }
+
+  span {
+    color: #711c91;
+    font-weight: 800;
+  }
+
+  .inputsection {
+    border-top: 2px solid white;
+    input {
+      width: 100%;
+      height: 30px;
+      margin-top: 20px;
+      border-radius: 0.3rem;
+      border: none;
+      padding: 0.3rem;
     }
-
-    span {
-        color: #711C91;
-        font-weight: 800;
+    input:nth-child(2) {
+      margin-left: 20px;
     }
-
-    .inputsection{
-        
-        border-top: 2px solid white;
-        input{
-            width: 100%;
-            height: 30px;
-            margin-top: 20px;
-            border-radius: 0.3rem;
-            border: none;
-            padding: 0.3rem;
-        }
-        input:nth-child(2){
-            margin-left: 20px;
-        }
-        & > div{
-            display: flex;
-        }
+    & > div {
+      display: flex;
     }
+  }
 
-    .prisContainer{
-        button {
-            width: 200px;
-            align-self: center;
-        }
-        .count { 
-            height: 2rem;
-            padding-left: 1rem;
-            p {
-            color: #711C91;
-            display: flex;
-            flex-direction: column;
-
-        }
+  .prisContainer {
+    button {
+      width: 200px;
+      align-self: center;
     }
-        
-        &>p{
-            border-bottom: 2px solid white;
-        }
-       &>div:nth-child(2){
-            margin-top: 20px;
-            height: 40px;
-            background-color: white;
-            color: aliceblue
-        }
-        div:nth-child(3){
-            
-            background-color: #0ABDC6;
-            color: white;
-            padding: 1rem;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-
-            div{
-                border-bottom: 1px solid aliceblue;
-                display: flex;
-                flex-direction: column;
-                padding: 0.5rem;
-                justify-content: center;
-            }
-        }
-        
-       
-    }
-    .total {
-        font-size: 1.5rem;
-        font-weight: 900;
-    }
-    
-    }
-    .creditcard_button {
-            width: 3rem;
-            border: none;
-            text-decoration: none;
-            background-color: aliceblue;
-            border: none;
-            color: #711C91;
-            border-radius: 0.7rem;
-            font-size: 1rem;
-            padding: 0.3rem 0.6rem;
-            transition: 0.1s ease-in;
-            cursor: pointer;
-        }
-    
-        .creditcard_button:hover {
-            box-shadow:
-            0 0 2px #fff,
-            0 0 5px #fff,
-            0 0 13px #711C91,
-            0 0 17px #711C91,;
-    
-        }
-
-    
-
-
-@media only screen and (max-width: 1100px){
-
-    .pay_info_form {
-        margin: 3rem 4rem;
-    }
-    .container {
+    .count {
+      height: 3rem;
+      border-radius: 20px 20px 0px 0px;
+      padding-top: 0.1rem;
+      padding-left: 1rem;
+      p {
+        color: #711c91;
+        display: flex;
         flex-direction: column;
-        .under_container {
-            width: 100%;
-        }
-
-        .prisContainer {
-            width: 100%;
-        }
+      }
     }
+
+    & > p {
+      border-bottom: 2px solid white;
+    }
+    & > div:nth-child(2) {
+      margin-top: 20px;
+      height: 40px;
+      background-color: white;
+      color: aliceblue;
+    }
+    div:nth-child(3) {
+      background-color: #711c91;
+      border-radius: 0px 0px 20px 20px;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      div {
+        border-bottom: 1px solid aliceblue;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        justify-content: center;
+      }
+    }
+  }
+  .total {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+}
+.creditcard_button {
+  width: 3rem;
+  border: none;
+  text-decoration: none;
+  background-color: aliceblue;
+  border: none;
+  color: #711c91;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  padding: 0.3rem 0.6rem;
+  transition: 0.1s ease-in;
+  cursor: pointer;
 }
 
-@media only screen and (max-width: 680px){
-    .pay_info_form {
-        margin: 3rem 0.1rem;
+.creditcard_button:hover {
+  box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 13px #711c91, 0 0 17px #711c91;
+}
+
+@media only screen and (max-width: 1100px) {
+  .pay_info_form {
+    margin: 3rem 4rem;
+  }
+  .container {
+    flex-direction: column;
+    .under_container {
+      width: 100%;
     }
 
+    .prisContainer {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .pay_info_form {
+    margin: 3rem 0.1rem;
+  }
 }
